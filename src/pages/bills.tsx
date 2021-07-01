@@ -8,7 +8,7 @@ type Bill = {
     id: number;
     name: string;
     price: number;
-    date: string;
+    date: Date;
  }
 
 export default function Bills() {

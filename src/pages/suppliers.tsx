@@ -1,4 +1,4 @@
-import { Flex, Box, Table, Thead, Tr, Th, Tbody, Td, Button } from '@chakra-ui/react'
+import { Flex, Box, Table, Thead, Tr, Th, Tbody, Td } from '@chakra-ui/react'
 import Sidebar from '../components/Sidebar'
 import { api } from '../services/api';
 

@@ -4,7 +4,7 @@ type Bill = {
     id: number;
     name: string;
     price: number;
-    date: string;
+    date: Date;
 }
 
 export function makeServerBills() {
@@ -28,8 +28,8 @@ export function makeServerBills() {
                 price() {
                     return 2000
                 },
-                date() {
-                    return '02/12/21'
+                date(i :number) {
+                    return `01/${i + 1}/2021`
                 },
             })
         },

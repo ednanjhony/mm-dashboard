@@ -17,7 +17,7 @@ import Link from 'next/link';
 type CreateBillFormData = {
     name: string;
     price: number;
-    date: string;
+    date: Date;
 }
 
 const createBillFormSchema = yup.object().shape({
@@ -48,7 +48,7 @@ export default function AddBills() {
     const handleAddBill: SubmitHandler<CreateBillFormData> = async (values) => {
         await addBill.mutateAsync(values);
 
-        router.push('/bills');
+        router.push('/dashboard');
     }
 
     return (
