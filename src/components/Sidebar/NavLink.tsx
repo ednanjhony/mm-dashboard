@@ -20,8 +20,8 @@ export function NavLink({ icon, children, href, ...rest }: NavLinkProps) {
                 }}
                 {...rest}
             >
-                <Icon as={icon} fontSize="20" color="gray.100" />
-                <Text ml="2" px={1} fontWeight="medium" color="gray.100">{children}</Text>
+                <Icon as={icon} fontSize={["14", "16", "18", "20"]} color="gray.100" />
+                <Text ml="2" px={1} fontSize={["12", "13", "14", "15"]} fontWeight="medium" color="gray.100">{children}</Text>
             </ChakraLink>
         </ActiveLink>
     )
