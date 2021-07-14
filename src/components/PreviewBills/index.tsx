@@ -18,19 +18,24 @@ export default function PreviewBills() {
     }, []);
 
     const currentBills = bills.filter(bill => {
-        let currentDate = new Date()
+        let today = new Date()
+        let currentMonth = (today.getMonth()+1)
         let billDate = new Date(bill.date)
+        
+        return (currentMonth === (billDate.getMonth()+1))
+      })
+      
+      console.log(currentBills);
+      
+      if (currentBills) {
 
-        return (currentDate.getTime() === billDate.getTime())
-    })
-
-    console.log(currentBills);
-
-       if (currentBills) {
+        console.log(currentBills)
             return (
                 <Table
+                        overflow="hidden"
                         maxH="250px"
                         bg="gray.200"
+                        fontSize="12px"
                         borderRadius={8}
                         overflowY="auto"
                         css={{
@@ -47,7 +52,7 @@ export default function PreviewBills() {
                         }}
                     >   
                         <Thead>
-                            <Tr>
+                            <Tr fontSize="12px">
                                 <Th>ID</Th>
                                 <Th>Nome do Fornecedor</Th>
                                 <Th>Valor</Th>

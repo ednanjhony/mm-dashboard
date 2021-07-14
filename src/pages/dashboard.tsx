@@ -8,7 +8,7 @@ import Sidebar from "../components/Sidebar";
 
 export default function Dashboard() {
     return (
-        <Box display="flex">
+        <Box display="flex" h="100%" maxH="200vh">
             <Sidebar />
             <Flex w="100%" flexDir="column">
                 <Box w="100%" h="350px" bgColor="blue.500" px={5} py={5}>
@@ -21,7 +21,7 @@ export default function Dashboard() {
                     </Flex>
                     
                 </Box>
-                <SimpleGrid w="70%" columns={2} spacing={10} mx="auto" mt="-12rem">
+                <SimpleGrid w={['40%', '50%', '60%', '70%']}  columns={[1, 1, 1, 2]} spacing={[6, 8, 10]} mx="auto" mt="-12rem">
                     <FlowGraphicIn />
                     <FlowGraphicOut />
                     <FlowGraphicTotal />

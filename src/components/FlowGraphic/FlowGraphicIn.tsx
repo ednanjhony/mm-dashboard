@@ -1,5 +1,7 @@
 import { Box, Text, theme } from '@chakra-ui/react'
 import dynamic from 'next/dynamic';
+import { useEffect, useState } from 'react';
+import { api } from '../../services/api';
 
 const Chart = dynamic(() => import('react-apexcharts'), {
     ssr: false,
@@ -60,7 +62,7 @@ const options = {
 
 const series = [
     {
-        name: 'series1',
+        name: 'primeiroAno',
         data: [
             15000, 
             22000,
@@ -77,6 +79,8 @@ const series = [
         ]
     }
 ]
+
+
 
 export default function FlowGraphicIn() {
     return (
