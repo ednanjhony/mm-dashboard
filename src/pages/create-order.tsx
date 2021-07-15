@@ -68,7 +68,7 @@ export default function CreateOrder() {
                     as="form"
                     flex="1"
                     w="80%"
-                    maxH="650px"
+                    h={["650px", "900px"]}
                     mx="auto"
                     mt="-15rem"
                     borderRadius={8}

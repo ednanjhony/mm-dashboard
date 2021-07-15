@@ -7,7 +7,7 @@ type Bill = {
     name: string;
     price: number;
     date: Date;
-}
+} 
 
 export default function PreviewBills() {
     const [bills, setBills] = useState<Bill[]>([]);
@@ -53,8 +53,6 @@ export default function PreviewBills() {
                     >   
                         <Thead>
                             <Tr fontSize="12px">
-                                <Th>ID</Th>
-                                <Th>Nome do Fornecedor</Th>
                                 <Th>Valor</Th>
                                 <Th>Data</Th>
                             </Tr>
@@ -62,8 +60,6 @@ export default function PreviewBills() {
                         <Tbody>
                             {bills.map(bill => (
                                 <Tr key={bill.id}>
-                                    <Td>{bill.id}</Td>
-                                    <Td>{bill.name}</Td>
                                     <Td>{new Intl.NumberFormat('pt-BR', {
                                         style: 'currency',
                                         currency: 'BRL'

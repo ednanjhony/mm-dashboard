@@ -20,7 +20,7 @@ export default function Sidebar() {
         onClose={onClose}
       >
         <DrawerOverlay>
-          <DrawerContent bg="gray.900">
+          <DrawerContent bg="gray.900" p="4">
             <DrawerCloseButton mt="6" />
             <DrawerHeader>Navegação</DrawerHeader>
 
@@ -30,7 +30,7 @@ export default function Sidebar() {
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
-    )
+    );
   }
 
     return (       

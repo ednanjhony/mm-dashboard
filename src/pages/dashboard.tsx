@@ -21,7 +21,7 @@ export default function Dashboard() {
                     </Flex>
                     
                 </Box>
-                <SimpleGrid w={['40%', '50%', '60%', '70%']}  columns={[1, 1, 1, 2]} spacing={[6, 8, 10]} mx="auto" mt="-12rem">
+                <SimpleGrid w="80%"  columns={[1, 1, 1, 2]} spacing={[6, 8, 10]} mx="auto" mt="-12rem">
                     <FlowGraphicIn />
                     <FlowGraphicOut />
                     <FlowGraphicTotal />
